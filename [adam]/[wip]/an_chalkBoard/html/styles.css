@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html {
+	overflow:hidden;
+}
+
+body {
+	background: transparent;
+}
+
+#main {
+	display:none;
+}
+
+.board {
+	font-size:16px;
+	font-family: 'Fredericka the Great', cursive;
+	color: rgba(255, 255, 255, 0.55);
+	background: url("banner.png");
+	background-repeat: no-repeat;
+	border-radius:2px;
+	--webkit-box-shadow:0 0 0 1px rgba(0,0,0,.15),0 0 4px rgba(0,0,0,.5);
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-weight:600;
+	font-size:16px;
+	cursor:pointer;
+	position:relative;
+	margin: 15% 60%;
+	height:596px;
+	width:389px;
+	line-height:23px;
+	color: #333;
+}
+
+textarea {
+	padding: 32px 32px 33px 32px;
+	color: rgba(255, 255, 255, 0.85);
+	font-family: 'Fredericka the Great', cursive;
+	font-size:26px;
+	resize:none;
+	height:596px;
+	width:389px;
+	background:0 0;
+	outline:0;
+	border:none;
+	max-height: 572px;
+	overflow:hidden;
+}
+
+.button-64 {
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/photos/laminate-wooden-floor-texture-background-picture-id1083302826?b=1&k=20&m=1083302826&s=170667a&w=0&h=ePdma8I7u7KHs2YbehQSVcCX9qay5iPr3wynsWnzFZ0=");
+  border: 0;
+  border-radius: 5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(31, 29, 24);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 20px;
+    min-width: 90px;
+  }
+}

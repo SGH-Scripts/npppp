@@ -1,0 +1,6 @@
+CREATE TABLE `an_chalkboard_signs` (
+	`id` int NOT NULL AUTO_INCREMENT,
+	`data` LONGTEXT NULL DEFAULT NULL,
+	`owner` VARCHAR(255) NOT NULL,
+	PRIMARY KEY (id)
+);

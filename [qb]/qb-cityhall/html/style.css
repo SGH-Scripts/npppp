@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+    height: 100vh;
+}
+
+.cityhall-main-container{
+    position: relative;
+    background-position: center center;
+    backface-visibility: hidden;
+    width: 100vh;
+    height: 70vh;
+    margin: 0 auto;
+    top: 15vh;
+    background-size: cover;
+    background-color: rgba(23, 23, 23, 80%);
+    border-radius: 2vh;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.226);
+}
+
+.cityhall-header {
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 6vh;
+    color: #ededed;
+    line-height: 10vh;
+    width: 100vh;
+    border-radius: 2vh 2vh 0 0;
+    height: 10vh;
+    background: #dc143c;
+}
+
+.cityhall-main-options {
+    position: relative;
+    height: 60vh;
+    width: 100vh;
+    margin: 0 auto;
+    display: table;
+    border-radius: 2vh;
+}
+.cityhall-option-blocks {
+    display: table-cell;
+    width: 50vh;
+}
+
+.cityhall-personal-info {
+    display: table-cell;
+    padding: 1vh 2vh;
+    vertical-align: top;
+    width: 50vh;
+    height: 45vh;
+    border-bottom-right-radius: 2vh;
+    background: rgba(37, 37, 37, 0.144);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: #ededed;
+}
+.char-info-title {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+.char-info-box {
+    margin-bottom: 0.5vh;
+}
+.char-info-js {
+    font-weight: 200;
+}
+
+.cityhall-option-block {
+    position: relative;
+    width: 50vh;
+    height: 30vh;
+    text-align: center;
+    transition: all 0.2s linear;
+    border-radius: 0vh 0 0 2vh;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.cityhall-option-block:first-child {
+    border-radius: 0;
+}
+.cityhall-option-block:last-child {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.cityhall-option-block:hover {
+    background: rgba(37, 37, 37, 0.900);
+    opacity: 0.9;
+}
+.cityhall-option-block > i {
+    font-size: 16vh;
+    line-height: 10vh;
+    margin-top: 6vh;
+    color: #ededed;
+}
+.cityhall-option-block > p {
+    color: #ededed;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1vh;
+    font-size: 4vh;
+}
+
+.cityhall-identity-page {
+    display: none;
+    position: relative;
+    height: 60vh;
+    width: 100vh;
+    margin: 0 auto;
+    border-radius: 0 0 2vh 2vh;
+    background: rgba(37, 37, 37, 0.418)
+}
+
+.identity-page-blocks {
+    position: absolute;
+    height: 60vh;
+    width: 73vh;
+    overflow-y: auto;
+}
+.identity-page-blocks::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgba(37, 37, 37, 0.418);
+}
+.identity-page-blocks::-webkit-scrollbar{
+	width: 1vh;
+	background-color: rgba(37, 37, 37, 0.418);
+}
+.identity-page-blocks::-webkit-scrollbar-thumb{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(37, 37, 37);
+}
+
+.identity-page-block {
+    position: relative;
+    float:left; 
+    width: 70vh;
+    height: 10vh;
+    margin: 1vh;
+    background: rgba(73, 73, 73, 0.664);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.1s ease-in-out;
+    border-radius: 0.5vh;
+}
+
+.identity-page-block:hover {
+    background: #ededed;
+    color: #000000;
+}
+.identity-page-block:hover span {
+    color: #000000;
+}
+
+.identity-license-image {
+    position: relative;
+    float: left;
+    clear: none;
+    width: 12vh;
+}
+.identity-license-image img {
+    width: 10vh;
+    margin-left: 1vh;
+}
+
+.identity-license-info {
+    position: relative;
+    padding-top: 0.2vh;
+    float: left;
+    clear: none;
+    width: 56vh;
+}
+.license-title-box {
+    position: relative;
+    margin-top: 1.5vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1vh;
+    color: #ededed;
+    font-size: 2vh;
+    line-height: 3vh;
+}
+.license-info-box {
+    margin-top: 0.2vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1vh;
+    color: #ededed;
+    font-size: 2vh;
+    line-height: 3vh;
+}
+
+.identity-selected {
+    background-color: rgba(196, 196, 196, 0.747);
+}
+.identity-selected span {
+    color: #000000;
+}
+
+.request-identity-button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1vh;
+    width: 25vh;
+    height: 5vh;
+    border-radius: 0.5vh;
+    background-color: #000000;
+}
+
+.request-identity-button > p {
+    color: #ededed;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 5vh;
+    line-height: 1vh;
+    letter-spacing: 0.05vh;
+}
+
+.request-identity-button:hover {
+    background: #fc1845;
+}
+
+.cityhall-job-page {
+    display: none;
+    position: relative;
+    height: 60vh;
+    width: 100vh;
+    border-radius: 0 0 2vh 2vh;
+    background: rgba(37, 37, 37, 0.418);
+}
+
+.cityhall-job-page-main {
+    display: table;
+    position: relative;
+}
+
+.job-page-blocks {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    width: 25vh;
+    height: 60vh;
+}
+.job-page-blocks-overflow {
+    overflow-y: auto;
+    height: 60vh;
+}
+.job-page-blocks-overflow::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgba(37, 37, 37, 0.418);
+}
+.job-page-blocks-overflow::-webkit-scrollbar{
+	width: 1vh;
+	background-color: rgba(37, 37, 37, 0.418);
+}
+.job-page-blocks-overflow::-webkit-scrollbar-thumb{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(37, 37, 37);
+}
+.job-details {
+    display: table-cell;
+    padding: 1vh 2vh;
+    position: relative;
+    width: 100vh;
+    height: 50vh;
+    background: rgba(73, 73, 73, 0.664);
+    border-radius: 0 0 2vh 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: #ededed;
+}
+.job-details-info {
+    display: none;
+}
+.job-info-title {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+.job-info-box {
+    margin-bottom: 0.5vh;
+}
+.job-info-js {
+    font-weight: 200;
+}
+.job-actions {
+    display: table-row;
+    width: 75vh;
+    height: 10vh;
+}
+.job-page-block {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.1s ease-in-out;
+}
+.job-page-block:hover {
+    background: #ededed;
+}
+.job-page-block > p:hover {
+    color: rgb(37, 37, 37);
+}
+.job-page-block > p {
+    position: relative;
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1vh;
+    color: #ededed;
+    font-size: 1.6vh;
+    margin: 0;
+    padding: 0;
+}
+
+.job-actions {
+    position: absolute;
+    width: 35vh;
+    bottom: 1vh;
+    right: 1vh;
+}
+.job-actions-buttons {
+    display: none;
+}
+.apply-job-button, .gps-job-button {
+    position: absolute;
+    display: table-cell;
+    width: 15vh;
+    height: 5vh;
+    background: #000000;
+    border-radius: 1vh;
+}
+.apply-job-button {
+    right: 1vh;
+    bottom: 1vh;
+}
+.gps-job-button {
+    right: 17vh;
+    bottom: 1vh;
+}
+.apply-job-button:hover, .gps-job-button:hover {
+    background: #fc1845;
+}
+.apply-job-button > p, .gps-job-button > p {
+    color: #ededed;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 5vh;
+    line-height: 1vh;
+    letter-spacing: 0.05vh;
+}
+.job-selected {
+    background: rgba(73, 73, 73, 0.664);
+}
+
+.back-to-main {
+    position: absolute;
+    vertical-align: middle;
+    top: 0;
+    right: 0;
+    width: 4.5vh;
+    height: 4.5vh;
+    margin: 1vh;
+    background: #dc143c;
+    border-radius: 0.5vh;
+    transition: all 0.1s linear;
+}
+.back-to-main > p {
+    margin: 0;
+    color: #ededed;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 3vh;
+    font-weight: 600;
+}

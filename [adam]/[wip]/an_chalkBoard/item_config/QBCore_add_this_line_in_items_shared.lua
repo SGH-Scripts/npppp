@@ -1,0 +1,1 @@
+['chalkboardsign'] = {['name'] = 'chalkboardsign', ['label'] = 'Chalk Board Sign', ['weight'] = 6000, ['type'] = 'item', ['image'] = 'chalkboardsign.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A chalk board that you can draw Ds on it!'},
